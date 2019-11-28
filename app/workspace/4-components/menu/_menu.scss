@@ -230,7 +230,13 @@
 @media screen and (max-width:1366px){
 
     .submenu {
-        width:79.5%;
+        width:80%;
+
+        li {
+            min-width: auto;
+            max-width:31%;
+            width:100%;
+        }
     }
 
 }
