@@ -1,0 +1,120 @@
+// title
+
+.title {
+
+    background-image: url("../img/backfon-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 100vh;
+    min-height: 70rem;
+    max-height: 1366px;
+
+    position: relative;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 0;
+
+}
+
+.slogan {
+
+    width: 100%;
+    max-width: 96.6rem;
+    min-width: 96.6rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.heading {
+    &__text {
+        font-family: $MontserratRegular;
+        font-size: 6rem;
+        line-height: 1.17;
+        text-align: center;
+        font-weight: 500;
+
+        color: $white;
+
+        margin: 0;
+    }
+}
+
+.description {
+    &__text {
+        font-family: $MontserratRegular;
+        font-size: 2.4rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white;
+    }
+}
+
+
+// adptive title
+
+
+
+
+@media screen and(max-width:1025px) {
+
+
+
+    .slogan {
+        min-width: auto;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+    .title {
+        min-height: 60rem;
+    }
+
+    .heading__text {
+
+        font-size: 3.6rem;
+        line-height: 1.33;
+    }
+
+
+}
+
+@media screen and (max-width:380px) {
+
+    .title {
+        min-height: 50rem;
+    }
+
+    .slogan {
+        padding: 1rem;
+        position: relative;
+        padding-top: 7rem;
+    }
+
+}
+
+
+@media screen and (max-width:340px) {
+
+    .heading__text {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+
+    .description__text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+}

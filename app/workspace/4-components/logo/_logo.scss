@@ -1,0 +1,48 @@
+// Logo
+
+.logo {
+    min-width: 25.3rem;
+    max-width: 25.3rem;
+    width: 100%;
+}
+
+.logo {
+
+    &__link {
+        max-width: 25.3rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.logo-mobile {
+
+    img {
+        width: 100%;
+        max-width: 12rem;
+    }
+}
+
+@media screen and(min-width:1171px) {
+
+    .logo-mobile {
+        display: none;
+    }
+
+}
+
+@media screen and(max-width:1170px) {
+
+    .logo-desktop {
+        display: none;
+    }
+}
+
+@media screen and(max-width:1024px) {
+
+    .logo {
+        padding-top: 2rem;
+    }
+}

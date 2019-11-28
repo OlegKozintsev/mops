@@ -1,0 +1,60 @@
+.cost {
+
+    padding-top: 7rem;
+    text-align: center;
+    &__button {
+
+        opacity: 0.98;
+        border-radius: 3rem;
+        box-shadow: 0 1rem 2.5rem 0 rgba(255, 192, 92, 0.39);
+        background-color: #ffc05c;
+        font-family: $MontserratExtraBold;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.3rem;
+        color: $fiolet;
+        display: inline-block;
+        padding: 2.8rem 4.2rem;
+        text-transform: uppercase;
+    }
+
+}
+
+
+@media screen and (max-width:380px) {
+
+    .cost {
+        padding-top: 3rem;
+
+    }
+
+    .cost__button {
+        padding: 2.8rem 1.5rem;
+        min-width: 29rem;
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width:368px) {
+
+    .cost__button {
+        padding: 2rem 1.4rem;
+        font-size: 1.2rem;
+
+    }
+}
+
+@media screen and (max-width:340px) {
+
+    .cost {
+        padding-top: 3rem;
+    }
+
+    .cost__button {
+
+        font-size: 1.2rem;
+    }
+
+}

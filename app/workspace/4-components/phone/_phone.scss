@@ -1,0 +1,21 @@
+// Phone
+.phone {
+
+    &__marker {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.7rem;
+        line-height: 2.4rem;
+        vertical-align: text-bottom;
+
+    }
+
+    &__number {
+        font-family: $MontserratRegular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.2rem;
+        color: $white;
+
+    }
+}

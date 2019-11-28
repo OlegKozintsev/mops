@@ -1,0 +1,73 @@
+//burger
+
+
+.burger-input {
+    display: none;
+}
+
+.burger {
+
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.burger-input + .burger-label {
+    top: 2rem;
+}
+
+
+.burger-input+.burger-label {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 1400;
+    display: inline-block;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        width: 100%;
+        height: 0.1rem;
+        top: 1.1rem;
+        margin-top: 0px;
+        left: 0;
+        display: inline-block;
+        background: #fff;
+        transition: .5s;
+        z-index: 1000;
+    }
+
+    span:first-child {
+        top: 0.1rem;
+    }
+
+    span:last-child {
+        top: 2.1rem;
+    }
+}
+
+.burger-label:hover {
+    cursor: pointer;
+}
+
+.burger-input:checked+.burger-label {
+    span {
+        opacity: 0;
+        top: 1.1rem !important;
+    }
+
+    span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+}
+

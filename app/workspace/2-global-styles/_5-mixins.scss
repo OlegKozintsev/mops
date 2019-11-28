@@ -1,0 +1,44 @@
+%center {
+    margin:0 auto;
+    display:block;
+}
+
+@mixin centerAbsolute($top, $left) {
+    top:$top;
+    left:$left;
+    position: absolute;
+    transform:translateX(-$left) translateY(-$top);
+}
+
+%fullblock {
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin justify {
+  text-align: justify;
+  line-height: 0;
+  font-size: 0;
+  text-justify: newspaper;
+  zoom: 1;
+  text-align-last: justify;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+}
+
+%outline {
+    outline:1px solid red;
+}
