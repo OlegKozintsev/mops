@@ -1,0 +1,183 @@
+// contacts adress
+.contacts {
+
+    width: 40rem;
+    margin-top:6.4rem;
+    display: inline-block;
+    padding: 4rem;
+    height: 44rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px 0 rgba(115, 60, 185, 0.61);
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    &__heading {
+        font-family: $MontserratRegular;
+        font-size: 46px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.3;
+        letter-spacing: normal;
+        color: #2a334f;
+        text-align: center;
+    }
+
+    &__separator {
+
+        margin:1.4rem auto;
+        width: 8rem;
+        height: 0.4rem;
+        background-color: #ffc05c;
+    }
+
+}
+
+.tabs {
+    padding-top: 3.4rem;
+
+}
+
+
+.tabs__caption {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+    background-color: #f7f9fc;
+    border-radius: 1rem;
+
+}
+
+.tabs__content {
+    display: none;
+    opacity: 0;
+    transition: opacity 300ms ease;
+
+    /* по умолчанию прячем все блоки */
+}
+
+.tabs__content.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+
+.tabs_contacts {
+    opacity: 0.5;
+    font-family: $MontserratRegular;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: #2a334f;
+    display: inline-block;
+    padding: 0.6rem 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 400ms ease;
+    min-width:15.8rem;
+
+}
+
+.tabs_contacts.active {
+    opacity: 0.98;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 0 rgba(115, 60, 185, 0.61);
+    background-image: linear-gradient(to bottom, #8433cc, #6b32b3);
+    color: #fff;
+    font-family: $MontserratRegular;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+    transition: color 400ms ease;
+
+}
+
+.adress-list {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+
+    &__img {
+        margin-right: 1.2rem;
+
+        &_p {
+            padding-left: 0.4rem;
+        }
+    }
+
+    &__text {
+        font-family: $MontserratRegular;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2a334f;
+    }
+}
+
+
+// adaptive
+
+@media screen and (max-width:901px) {
+
+
+        .contacts {
+            order: 2;
+           
+        }  
+
+}
+
+
+@media screen and (max-width:640px) {
+
+    .contacts {
+       
+        padding: 2rem;
+    }
+
+    .tabs_contacts {
+        min-width: 50%;
+    }
+
+    
+}
+
+@media screen and (max-width:460px) {
+
+
+    .contacts {
+       min-width:28rem;
+    }
+
+    .tabs_contacts {
+        padding: 0.6rem 2rem;
+    }
+  
+
+
+}
+
+@media screen and (max-width:380px) {
+
+    .contacts {
+        max-width: 90%;
+       
+    }
+
+   
+
+}

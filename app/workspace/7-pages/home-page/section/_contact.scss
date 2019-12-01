@@ -1,0 +1,100 @@
+// contact
+
+.contact-form {
+
+    background-image: url('../img/map.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+    padding-bottom: 26rem;
+    height: 100vh;
+    min-height: 96rem;
+
+}
+
+.map {
+    max-width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+// adaptive
+
+@media screen and(max-width:1366px) {
+
+    .contact-form {
+
+        .map {
+            max-width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:901px) {
+
+
+    .contact-form {
+
+        .map {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+       
+    }
+
+}
+
+@media screen and (max-width:769px) {
+
+    .contact-form {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .contact-form {
+        background-position: center bottom;
+        background-size: 107rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        .map {
+            justify-content: flex-end;
+        }
+
+      }
+
+}
+
+
+@media screen and (max-width:460px) {
+
+
+    .contact-form {
+
+      
+
+        .map {
+            max-width: 100%;
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+    }
+}
