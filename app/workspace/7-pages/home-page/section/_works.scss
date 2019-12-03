@@ -1,0 +1,145 @@
+// works
+
+.works {
+
+    padding-top: 17.4rem;
+    padding-bottom: 11.4rem;
+    background-image: linear-gradient(127deg, #fefcff 12%, #f8f2ff 88%);
+
+}
+
+.works-content {
+
+    display: flex;
+    max-width: 118.2rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    // background-image: url('../img/line.svg');
+    // background-position: top right;
+    // background-size: 107.4rem;
+    // background-repeat: no-repeat;
+
+}
+
+.svg-work {
+    position: absolute;
+    top: -1.5rem;
+    left: 8rem;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+
+    svg {
+        width: 100%;
+
+    }
+}
+
+.content__item_width {
+    max-width: 25%;
+    padding-top: 7rem;
+}
+
+// adaptive works
+
+.works {
+
+
+    min-height: 96rem;
+    position: relative;
+    max-height: 1366px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .works {
+
+        .line-desktop {
+            
+        }
+    }
+}
+
+@media screen and (min-width:1202px) {
+
+    .works .svg-mobile {
+        display:none;
+    }
+}
+
+@media screen and (max-width:1201px) {
+    .works {
+
+        height: auto;
+        min-height: auto;
+        max-height: 100%;
+
+      
+
+        .line-desktop {
+            display: none;
+        }
+
+        .content__item_width:nth-child(5) {
+            padding-top: 2rem;
+        }
+
+        .content__item_width:nth-child(6) {
+            padding-top: 2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:1201px) {
+
+    .works {
+
+        height: auto;
+        height: auto;
+        position: relative;
+        max-height: auto;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+    }
+
+    .works {
+
+        .content__item_width {
+            max-width: 100%;
+
+
+        }
+
+        // .works-content {
+        //     background-image: url('../img/gridWorks.svg');
+        //     background-position: center 2rem;
+        //     background-size: 30rem;
+
+        // }
+
+        .content__item-description {
+            padding-bottom: 0rem;
+        }
+
+        .content__item-title {
+            padding-top: 5rem;
+        }
+
+        .content__item_width:nth-child(5) {
+            padding-top: 7rem;
+        }
+
+        .content__item_width:nth-child(6) {
+            padding-top: 7rem;
+        }
+
+    }
+}
