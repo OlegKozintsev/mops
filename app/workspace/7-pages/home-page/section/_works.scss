@@ -64,16 +64,30 @@
             
         }
     }
+
+    .svg-work {
+       
+        top: -2rem;
+        left: 0rem;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    
+        svg {
+            width: 100%;
+    
+        }
+    }
 }
 
-@media screen and (min-width:1202px) {
+@media screen and (min-width:1201px) {
 
     .works .svg-mobile {
         display:none;
     }
 }
 
-@media screen and (max-width:1201px) {
+@media screen and (max-width:1200px) {
     .works {
 
         height: auto;
@@ -114,16 +128,12 @@
 
         .content__item_width {
             max-width: 100%;
+            padding-top: 7rem;
 
 
         }
 
-        // .works-content {
-        //     background-image: url('../img/gridWorks.svg');
-        //     background-position: center 2rem;
-        //     background-size: 30rem;
-
-        // }
+       
 
         .content__item-description {
             padding-bottom: 0rem;
@@ -133,13 +143,44 @@
             padding-top: 5rem;
         }
 
-        .content__item_width:nth-child(5) {
-            padding-top: 7rem;
+        .content__item_width:nth-child(4) {
+            padding-top: 10rem;
         }
 
+        .content__item_width:nth-child(5) {
+            padding-top: 10rem;
+        }
+
+        .content__item_width:nth-child(6) {
+            padding-top: 10rem;
+        }
+
+    }
+}
+
+@media screen and (max-width:360px) {
+    .works {
+
+        .content__item_width:nth-child(1) {
+            padding-top: 11rem;
+        }
+
+        .content__item_width:nth-child(3) {
+            padding-top: 5rem;
+        }
+
+        .content__item_width:nth-child(4) {
+            padding-top: 7rem;
+        }
+        .content__item_width:nth-child(5) {
+            padding-top: 6.5rem;
+        }
         .content__item_width:nth-child(6) {
             padding-top: 7rem;
         }
 
     }
+
+
+
 }
