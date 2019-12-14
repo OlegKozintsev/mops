@@ -1561,7 +1561,7 @@ table {
     max-width: 95%;
     height: -webkit-calc(95vw - 10rem);
     height: calc(95vw - 10rem);
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative; }
   .portfolio .content__item__button {
     font-size: 1.4rem;
