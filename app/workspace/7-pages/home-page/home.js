@@ -3,7 +3,7 @@
 
  var autoplaySlider = $('#portfolio').lightSlider({
     item:3,
-    loop:false,
+    loop:true,
     adaptiveHeight: false,
     slideMargin:0,
     slideMove:1,
@@ -38,7 +38,7 @@ $('#portfolioRight').click(function(){
 
  var teamSlider = $('#team').lightSlider({
     item:4,
-    loop:false,
+    loop:true,
     adaptiveHeight: true,
     slideMargin:20,
     pager: false,
@@ -83,7 +83,7 @@ $('#teamRight').click(function(){
 
 var caseSlider = $('#case').lightSlider({
 item:4,
-loop:false,
+loop:true,
 adaptiveHeight: true,
 slideMargin:20,
 pager: false,
