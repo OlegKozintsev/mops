@@ -111,7 +111,7 @@ $(document).ready(function() {
 
  var autoplaySlider = $('#portfolio').lightSlider({
     item:3,
-    loop:false,
+    loop:true,
     adaptiveHeight: false,
     slideMargin:0,
     slideMove:1,
@@ -146,7 +146,7 @@ $('#portfolioRight').click(function(){
 
  var teamSlider = $('#team').lightSlider({
     item:4,
-    loop:false,
+    loop:true,
     adaptiveHeight: true,
     slideMargin:20,
     pager: false,
@@ -191,7 +191,7 @@ $('#teamRight').click(function(){
 
 var caseSlider = $('#case').lightSlider({
 item:4,
-loop:false,
+loop:true,
 adaptiveHeight: true,
 slideMargin:20,
 pager: false,
@@ -226,6 +226,29 @@ caseSlider.goToPrevSlide();
 $('#caseRight').click(function(){
 caseSlider.goToNextSlide(); 
 });
+
+
+// mask
+
+$("#inputPhone").mask("9 (999) 999-99-99");
+$.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+      $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+      var range = $(this).get(0).createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+  };
+  $('input[name="inputPhone"]').click(function(){
+    $(this).setCursorPosition(0);  // set position number
+  });
+
+// 
+
+
 
 });
 

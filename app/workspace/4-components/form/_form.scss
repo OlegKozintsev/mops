@@ -7,7 +7,7 @@
     box-shadow: 0 2rem 2.5rem 0 rgba(115, 60, 185, 0.61);
     background-color: #ffffff;
     padding: 4rem;
-    max-height:56.4rem;
+    max-height:100%;
 
     &__heading {
         font-family: $MontserratRegular;
@@ -74,6 +74,18 @@
         border: solid 0.1rem #1408ff;
     }
 
+    &::placeholder {
+        font-family: $MontserratRegular;
+        font-size: 1.2rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #2a334f;
+        padding-top:0.4rem;
+     
+    }
+
 }
 
 .form__submit {
@@ -96,6 +108,54 @@
     height: 6rem;
     width: 100%;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.form__input_textarea {
+    padding-top: 1.3rem;
+}
+
+
+.wpcf7-not-valid-tip {
+    font-family: $MontserratRegular;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #fa5465;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+.wpcf7-not-valid {
+    border:0.1rem solid #fa5465;
+    background-image: url('../img/invalid-name.svg');
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
+    background-position: 95% center;
+    
+  
+
+}
+
+div.wpcf7-mail-sent-ok {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    font-family: $MontserratRegular;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    display:none!important;
 }
 
 //adaptive
